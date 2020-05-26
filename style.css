@@ -96,31 +96,34 @@ article {
   align-items: flex-start;
   justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
 }
 
 .art_one {
   background: grey;
   width: 50%;
   padding: 10rem 5rem 0rem 5rem;
+  color: white;
 }
 
 .art_two {
   background: rgb(97, 95, 95);
   width: 50%;
   padding: 10rem 5rem 0rem 5rem;
+  color: white;
 }
 
 .art_three {
   background: rgb(97, 95, 95);
   width: 50%;
   padding: 10rem 5rem 0rem 5rem;
+  color: white;
 }
 
 .art_four {
   background: grey;
   width: 50%;
   padding: 10rem 5rem 0rem 5rem;
+  color: white;
 }
 
 .head_row_article {
@@ -199,7 +202,7 @@ sub {
 .latest-post-mid,
 .latest-post-right {
   width: 30%;
-  height: 60vh;
+  height: 80vh;
   padding: 1rem 1rem;
   text-align: left;
 }
@@ -271,18 +274,15 @@ sub {
 .members {
   display: flex;
   justify-content: flex-end;
+  margin-top: 1rem 0;
+  padding: 0 2rem;
 }
 
 .smashing {
   padding: 1rem 1rem;
-  width: 32%;
-  background-color: rgb(173, 169, 169);
-}
-
-.smashing-art {
-  padding: 1rem 1rem;
-  width: 32%;
-  background-color: rgb(94, 91, 91);
+  width: 65%;
+  background-color: yellow;
+  filter: grayscale(100%);
 }
 
 .smashing button {
@@ -304,7 +304,7 @@ sub {
 .mid-p {
   width: 100%;
   height: 12rem;
-  background-color: grey;
+  background-color: rgb(212, 209, 209);
   color: rgb(39, 38, 38);
   text-align: center;
   padding: 4rem 1rem;
@@ -314,18 +314,54 @@ sub {
   color: inherit;
 }
 
-.smashing-art {
-  padding: 1rem 1rem;
-  width: 32%;
-  background-color: rgb(173, 169, 169);
-}
-.content-art {
-  text-align: left;
-}
-.tag-art sub {
-  vertical-align: top;
-}
-.tag-author span {
-  text-decoration: underline;
+.access_article {
   color: black;
+}
+
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+ 
+}
+
+.smashing_on_tv {
+  width: 60%;
+  background: rgb(57, 177, 20);
+  filter: grayscale(100%);
+  z-index: -10; 
+}
+
+.img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.img {
+  background: gray;
+  padding: 3rem;
+  width: 100%;
+}
+.title {
+  text-align: center;
+  background: #fff;
+}
+
+.desc_text {
+  text-align: center;
+  background: grey;
+  max-width: 500px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.sign_in_text {
+  text-align: center;
 }
