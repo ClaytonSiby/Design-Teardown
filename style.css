@@ -1,3 +1,62 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(185, 181, 181);
+}
+
+nav a {
+  padding: 8px 50px 8px 8px;
+  margin-right: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover:not(:last-child) {
+  background-color: rgb(97, 95, 95);
+  border: solid 1px rgb(97, 95, 95);
+  border-radius: 5px;
+}
+
+#more-tab {
+  background-color: rgb(97, 95, 95);
+  border: solid 1px rgb(97, 95, 95);
+  border-radius: 5px;
+}
+
+input {
+  width: 250px;
+  height: 50px;
+  padding: 10px 0px 10px 25px;
+  font-size: 20px;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.placeholder {
+  padding-left: 150px;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+.right-nav-items {
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  top: 35%;
+  margin-left: 5px;
+}
