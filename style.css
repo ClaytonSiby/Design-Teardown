@@ -15,16 +15,15 @@ nav {
   background-color: rgb(185, 181, 181);
 }
 
-nav a {
-  padding: 8px 50px 8px 8px;
-  margin-right: 5px;
+.list-hover,
+#more-tab {
+  padding: 8px;
   color: black;
   text-decoration: none;
 }
 
-nav a:hover:not(:last-child) {
+.list-hover:hover {
   background-color: rgb(97, 95, 95);
-  border: solid 1px rgb(97, 95, 95);
   border-radius: 5px;
 }
 
@@ -49,6 +48,8 @@ input {
 
 .logo {
   font-size: 25px;
+  text-decoration: none;
+  color: #000;
 }
 
 .right-nav-items {
@@ -59,4 +60,101 @@ input {
   position: absolute;
   top: 35%;
   margin-left: 5px;
+}
+
+.left-nav-items {
+  border: 1px dotted gray;
+  padding: 1rem 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section_one {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: red;
+  height: auto;
+}
+
+.section_two {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: rgb(83, 185, 23);
+  height: auto;
+}
+
+.art_one {
+  background: grey;
+  width: 50%;
+  /* height: 50vh; */
+  padding: 10rem 5rem;
+}
+
+.art_two {
+  background: rgb(184, 126, 126);
+  width: 50%;
+  /* height: 50vh; */
+  padding: 10rem 5rem;
+}
+
+.art_three {
+  background: #bd2d2d;
+  width: 50%;
+}
+
+.art_four {
+  background: rgb(17, 146, 179);
+  width: 50%;
+}
+
+.head_row_article {
+   position: absolute;
+   left: 32rem;
+   top: 7rem;
+   background: rgb(230, 222, 222);
+   text-align: center;
+   color: rgb(12, 7, 7);
+   line-height: 1.5rem;
+   width: 20%;
+}
+
+.author_info {
+   display: flex;
+   align-items: center;
+}
+
+.img_div {
+  width: 4rem;
+  height: 4rem;
+  background-color: #000;
+  float: left;
+  margin-right: 1rem;
+  transform: scale(1.1) rotate(-11deg);
+  transition: ease .2s;
+  border: 4px solid #fff;
+  border-radius: 6px;
+}
+
+.img_div:hover {
+   transform: scale(1.1) rotate(0);
+}
+
+.description_text {
+  margin-top: 3rem;
+}
+
+.description_text span {
+   padding: 1rem 0 1rem 1rem;
+   font-size: 1.2rem;
+   font-weight: bold;
+}
+
+sub {
+  vertical-align: top;
+  font-size: 10px;
 }
