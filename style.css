@@ -179,7 +179,7 @@ sub {
   font-size: 10px;
 }
 
-.fa-long-arrow-alt-right {
+.top-arrow {
   margin: 3rem 0rem;
   font-size: 2.5rem;
 }
@@ -192,15 +192,18 @@ sub {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  transform: scale(14) rotate();
-  transition: ease 0.2s;
+  
+  padding: 2rem;
 }
 
 .latest-post-left,
 .latest-post-mid,
 .latest-post-right {
-  width: 25%;
+  width: 30%;
+  height: 80vh;
   padding: 2rem 1rem;
+  background-color: blue;
+  text-align: left;
 }
 
 .latest-post-left:hover,
@@ -243,11 +246,28 @@ sub {
   font-size: 15px;
 }
 
-.latest-arrow-back {
-  padding-top: 2rem;
+.post-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: scale(14) rotate();
+  transition: ease 0.2s;
 }
 
-.latest-arrow-back:hover {
-  background-color: rgb(214, 207, 207);
-  width: 4rem;
+.div-hover:hover {
+  width: 15%;
+  height: 15%;
+  background: grey;
+  color: black;
+}
+
+.bottom-arrow {
+   position: absolute;
+   bottom: 0px;
+   margin-top: 3rem;
+   left: 0;
+   display: block;
+   padding: .6rem 1rem;
+   background: green;
 }
