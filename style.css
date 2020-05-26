@@ -12,13 +12,14 @@ nav {
   padding: 10px;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgb(185, 181, 181);
+  background-color: red;
+  filter: grayscale(100%);
 }
 
 .list-hover,
 #more-tab {
   padding: 8px;
-  color: black;
+  color: rgb(196, 192, 192);
   text-decoration: none;
 }
 
@@ -49,7 +50,7 @@ input {
 .logo {
   font-size: 25px;
   text-decoration: none;
-  color: #000;
+  color: rgb(153, 150, 150);
 }
 
 .right-nav-items {
@@ -65,6 +66,7 @@ input {
 .left-nav-items {
   border: 1px dotted gray;
   padding: 1rem 2rem;
+  background-color: rgb(233, 229, 229);
 }
 
 .container {
@@ -88,44 +90,62 @@ input {
   height: auto;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
 .art_one {
   background: grey;
   width: 50%;
-  /* height: 50vh; */
-  padding: 10rem 5rem;
+  padding: 10rem 5rem 0rem 5rem;
 }
 
 .art_two {
-  background: rgb(184, 126, 126);
+  background: rgb(97, 95, 95);
   width: 50%;
-  /* height: 50vh; */
-  padding: 10rem 5rem;
+  padding: 10rem 5rem 0rem 5rem;
 }
 
 .art_three {
-  background: #bd2d2d;
+  background: rgb(97, 95, 95);
   width: 50%;
+  padding: 10rem 5rem 0rem 5rem;
 }
 
 .art_four {
-  background: rgb(17, 146, 179);
+  background: grey;
   width: 50%;
+  padding: 10rem 5rem 0rem 5rem;
 }
 
 .head_row_article {
-   position: absolute;
-   left: 32rem;
-   top: 7rem;
-   background: rgb(230, 222, 222);
-   text-align: center;
-   color: rgb(12, 7, 7);
-   line-height: 1.5rem;
-   width: 20%;
+  position: absolute;
+  left: 36rem;
+  top: 7rem;
+  background: rgb(230, 222, 222);
+  text-align: center;
+  color: rgb(12, 7, 7);
+  line-height: 1.5rem;
+  width: 20%;
 }
 
 .author_info {
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.author_text {
+  font-size: 1.5rem;
+}
+
+.author_text span {
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .img_div {
@@ -135,13 +155,13 @@ input {
   float: left;
   margin-right: 1rem;
   transform: scale(1.1) rotate(-11deg);
-  transition: ease .2s;
+  transition: ease 0.2s;
   border: 4px solid #fff;
   border-radius: 6px;
 }
 
 .img_div:hover {
-   transform: scale(1.1) rotate(0);
+  transform: scale(1.1) rotate(0);
 }
 
 .description_text {
@@ -149,12 +169,85 @@ input {
 }
 
 .description_text span {
-   padding: 1rem 0 1rem 1rem;
-   font-size: 1.2rem;
-   font-weight: bold;
+  padding: 1rem 0 1rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 sub {
   vertical-align: top;
   font-size: 10px;
+}
+
+.fa-long-arrow-alt-right {
+  margin: 3rem 0rem;
+  font-size: 2.5rem;
+}
+
+.header-tag {
+  font-size: 2.5rem;
+}
+
+.latest-post {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  transform: scale(14) rotate();
+  transition: ease 0.2s;
+}
+
+.latest-post-left,
+.latest-post-mid,
+.latest-post-right {
+  width: 25%;
+  padding: 2rem 1rem;
+}
+
+.latest-post-left:hover,
+.latest-post-mid:hover,
+.latest-post-right:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: grey;
+}
+
+.latest-post p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+  color: rgb(97, 95, 95);
+}
+
+.latest-h2,
+.latest-post span {
+  text-decoration: underline;
+}
+
+.latest-h2:hover {
+  color: red;
+}
+
+.latest-post a:hover {
+  background-color: rgb(97, 95, 95);
+}
+
+.latest-post span {
+  color: rgb(97, 95, 95);
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.latest-post span:hover {
+  font-weight: bolder;
+}
+
+.latest-sub {
+  font-size: 15px;
+}
+
+.latest-arrow-back {
+  padding-top: 2rem;
+}
+
+.latest-arrow-back:hover {
+  background-color: rgb(214, 207, 207);
+  width: 4rem;
 }
