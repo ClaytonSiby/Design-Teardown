@@ -38,7 +38,7 @@ nav {
 input {
   width: 250px;
   height: 50px;
-  padding: 10px 0px 10px 25px;
+  padding: 10px 0 10px 25px;
   font-size: 20px;
   align-self: center;
   border-radius: 5px;
@@ -102,28 +102,28 @@ article {
 .art_one {
   background: grey;
   width: 50%;
-  padding: 10rem 5rem 0rem 5rem;
+  padding: 10rem 5rem 0 5rem;
   color: white;
 }
 
 .art_two {
   background: rgb(97, 95, 95);
   width: 50%;
-  padding: 10rem 5rem 0rem 5rem;
+  padding: 10rem 5rem 0 5rem;
   color: white;
 }
 
 .art_three {
   background: rgb(97, 95, 95);
   width: 50%;
-  padding: 10rem 5rem 0rem 5rem;
+  padding: 10rem 5rem 0 5rem;
   color: white;
 }
 
 .art_four {
   background: grey;
   width: 50%;
-  padding: 10rem 5rem 0rem 5rem;
+  padding: 10rem 5rem 0 5rem;
   color: white;
 }
 
@@ -184,7 +184,7 @@ sub {
 }
 
 .top-arrow {
-  margin: 3rem 0rem;
+  margin: 3rem 0;
   font-size: 2.5rem;
 }
 
@@ -230,6 +230,11 @@ sub {
   color: red;
 }
 
+.bottom-p a {
+  text-decoration: underline;
+  color: inherit;
+}
+
 .latest-post a:hover {
   background-color: rgb(97, 95, 95);
 }
@@ -259,7 +264,7 @@ sub {
 
 .bottom-arrow {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   margin-top: 3rem;
   left: 0;
   display: block;
@@ -289,11 +294,6 @@ sub {
   font-size: 1.5rem;
 }
 
-/* .{
-  color: rgb(39, 38, 38);
-  text-align: center;
-} */
-
 .header-p,
 .mid-p {
   width: 100%;
@@ -302,10 +302,6 @@ sub {
   color: rgb(39, 38, 38);
   text-align: center;
   padding: 4rem 1rem;
-}
-.bottom-p a {
-  text-decoration: underline;
-  color: inherit;
 }
 
 .access_article {
@@ -415,6 +411,7 @@ sub {
   height: 30rem;
   background-color: rgb(196, 177, 177);
 }
+
 .p-week {
   display: flex;
   align-items: flex-start;
@@ -458,7 +455,6 @@ sub {
 .info_div {
   height: auto;
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   padding: 1rem 2rem;
   width: 50%;
