@@ -435,6 +435,7 @@ sub {
   transition: ease 0.2s;
   border: 4px solid #fff;
   border-radius: 6px;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .p-week-img:hover {
@@ -444,4 +445,61 @@ sub {
 .p-week-text {
   width: 55rem;
   height: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-self: space-between;
+  padding: 2rem 4rem;
+}
+
+.info_div {
+  height: auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 50%;
+}
+
+
+.image {
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  transition: ease .2s;
+  transform: scale(1.1) rotate(-11deg);
+  border: 3px solid #fff;
+  background: black;
+  margin-right: 2rem;
+}
+
+.image:hover {
+  transform: scale(1) rotate(0);
+}
+
+.design_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background: #d33a2c;
+  filter: grayscale(100%);
+}
+
+.right_design, .left_desing {
+  width: 50%;
+}
+
+.right_design_text, .desing_title {
+  font-family: sans-serif;
+}
+
+.left_desing {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: -40px;
 }
