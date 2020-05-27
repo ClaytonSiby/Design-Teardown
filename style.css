@@ -5,6 +5,7 @@
 body {
   margin: 0;
   width: 100%;
+  background: rgb(230, 228, 222);
 }
 
 nav {
@@ -278,13 +279,6 @@ sub {
   padding: 0 2rem;
 }
 
-.smashing {
-  padding: 1rem 1rem;
-  width: 65%;
-  background-color: yellow;
-  filter: grayscale(100%);
-}
-
 .smashing button {
   padding: 1.2rem 2rem;
   color: black;
@@ -295,10 +289,10 @@ sub {
   font-size: 1.5rem;
 }
 
-.red-image {
+/* .{
   color: rgb(39, 38, 38);
   text-align: center;
-}
+} */
 
 .header-p,
 .mid-p {
@@ -324,17 +318,19 @@ sub {
   align-items: center;
   justify-content: center;
   height: auto;
- 
+  padding: 1rem;
+
 }
 
-.smashing_on_tv {
+.smashing_on_tv, .red-image  {
   width: 60%;
-  background: rgb(57, 177, 20);
+  background: #d33a2c;
   filter: grayscale(100%);
   z-index: -10; 
+  padding: 2rem 2rem;
 }
 
-.img-div {
+.smash_container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -342,26 +338,37 @@ sub {
   text-align: center;
   height: 80vh;
   width: 100%;
+  color: rgb(177, 168, 168);
 }
 
-.img {
-  background: gray;
-  padding: 3rem;
-  width: 100%;
+.smash_img_div {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: #f1eec5;
+  filter: grayscale(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .title {
   text-align: center;
-  background: #fff;
 }
 
 .desc_text {
   text-align: center;
-  background: grey;
   max-width: 500px;
   padding: 2rem;
   margin: auto;
 }
 
 .sign_in_text {
+  text-align: center;
+}
+
+.smash_button {
+  border-radius: .5rem;
+  padding: .5rem 1rem;
   text-align: center;
 }
