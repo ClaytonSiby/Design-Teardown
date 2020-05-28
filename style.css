@@ -76,18 +76,17 @@ input {
 }
 
 .section_one {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   background: red;
-  height: auto;
 }
 
 .section_two {
+  background: rgb(83, 185, 23);
+}
+
+.combine_section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: rgb(83, 185, 23);
   height: auto;
 }
 
@@ -101,27 +100,21 @@ article {
 
 .art_one {
   background: grey;
-  width: 50%;
-  padding: 10rem 5rem 0 5rem;
-  color: white;
 }
 
 .art_two {
   background: rgb(97, 95, 95);
-  width: 50%;
-  padding: 10rem 5rem 0 5rem;
-  color: white;
 }
 
 .art_three {
   background: rgb(97, 95, 95);
-  width: 50%;
-  padding: 10rem 5rem 0 5rem;
-  color: white;
 }
 
 .art_four {
   background: grey;
+}
+
+.article_style {
   width: 50%;
   padding: 10rem 5rem 0 5rem;
   color: white;
@@ -527,8 +520,11 @@ footer h1 {
   float: left;
   display: list-item;
   list-style: disc;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  margin: 0 1.3rem;
+}
+
+.footer_link {
+  text-decoration: none;
   font-size: 1.3rem;
   color: #fff;
 }
